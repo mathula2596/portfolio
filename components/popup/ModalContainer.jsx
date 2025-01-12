@@ -4,7 +4,7 @@ import UseClickOutside from "@/components/layout/UseClickOutside";
 
 const ModalContainer = ({ children, nullValue }) => {
   const { modalToggle } = useContext(context);
-  let domNode = useClickOutside(() => {
+  let domNode = UseClickOutside(() => {
     modalToggle(false);
     nullValue(null);
   });

@@ -7,9 +7,47 @@ import { sliderProps } from './sliderProps';
 import { Client } from './Client';
 import { Testimonal } from './Testimonal';
 
+const projects = [
+  {
+    id:1,
+    title: "Library Management System",
+    category: "Desktop Application",
+    image: "assets/img/portfolio/1.jpg",
+    link: "https://github.com/mathula2596/LibraryManagementSystem"
+  },
+  {
+    id:2,
+    title: "Defect Management System",
+    category: "Web Application",
+    image: "assets/img/portfolio/1.jpg",
+    link: "https://github.com/mathula2596/DefectManagementSystem/tree/master/FinalDefect"
+  },
+  {
+    id:3,
+    title: "I For You",
+    category: "Mobile Application",
+    image: "assets/img/portfolio/1.jpg",
+    link: "https://github.com/mathula2596/IForYou"
+  },
+  {
+    id:4,
+    title: "Fitting In",
+    category: "Unity Game Application",
+    image: "assets/img/portfolio/1.jpg",
+    link: "https://github.com/mathula2596/FittingIn"
+  },
+  {
+    id:5,
+    title: "News Portal",
+    category: "Web Application",
+    image: "assets/img/portfolio/1.jpg",
+    link: "https://bitbucket.org/bitproject2019/techfascino/src/master/"
+  },
+
+];
 
 export const Portfolio = () => {
-    const { setPortfolioModal, modalToggle } = useContext(context);
+    const { navChange } = useContext(context);
     return (
     <SectionContainer name="portfolio">
       <div className="elisc_tm_portfolio w-full float-left pt-[120px]">
@@ -45,171 +83,54 @@ export const Portfolio = () => {
               {...sliderProps.portfolio}
               className="gallery_zoom mb-[65px]"
             >
-              <SwiperSlide>
-                <div className="list_inner">
-                  <div className="image relative rounded-[4px] overflow-hidden mb-[25px]">
-                    <img
-                      className="min-w-full relative opacity-0"
-                      src="assets/img/thumbs/31-36.jpg"
-                      alt="image"
-                    />
-                    <div
-                      className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                      data-img-url="assets/img/portfolio/1.jpg"
-                    />
-                    <a
-                      className="elisc_tm_full_link popup-youtube absolute inset-0 z-[5]"
-                      href="https://www.youtube.com/watch?v=7e90gBu4pas"
-                    />
+              {projects.map((project) => (
+                <SwiperSlide key={project.id}>
+                  <div className="list_inner">
+                    <div className="image relative rounded-[4px] overflow-hidden mb-[25px]">
+                      <img
+                        className="min-w-full relative opacity-0"
+                        src={project.image}
+                        alt={project.title}
+                      />
+                      <div
+                        className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
+                        data-img-url={project.image}
+                      />
+                      <a target='_blank' 
+                        className="elisc_tm_full_link popup-youtube absolute inset-0 z-[5]"
+                        href={project.link}
+                      />
+                    </div>
+                    <div className="details w-full float-left">
+                      <span className="category inline-block mb-[7px]">
+                        <a
+                          className="inline-block uppercase text-[#55527C] font-medium"
+                          onClick={() => navChange("skill")}
+                        >
+                          {project.category}
+                        </a>
+                      </span>
+                      <h3 className="title">
+                        <a
+                          className="line_effect popup-youtube font-semibold text-[24px] text-[#130F49]"
+                          href={project.link} target='_blank'
+                        >
+                          {project.title}
+                        </a>
+                      </h3>
+                    </div>
                   </div>
-                  <div className="details w-full float-left">
-                    <span className="category inline-block mb-[7px]">
-                      <a
-                        className="inline-block uppercase text-[#55527C] font-medium"
-                        href="#"
-                      >
-                        Youtube
-                      </a>
-                    </span>
-                    <h3 className="title">
-                      <a
-                        className="line_effect popup-youtube font-semibold text-[24px] text-[#130F49]"
-                        href="https://www.youtube.com/watch?v=7e90gBu4pas"
-                      >
-                        New Technology
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="list_inner">
-                  <div className="image relative rounded-[4px] overflow-hidden mb-[25px]">
-                    <img
-                      className="min-w-full relative opacity-0"
-                      src="assets/img/thumbs/31-36.jpg"
-                      alt="image"
-                    />
-                    <div
-                      className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                      data-img-url="assets/img/portfolio/2.jpg"
-                    />
-                    <a
-                      className="elisc_tm_full_link popup-vimeo absolute inset-0 z-[5]"
-                      href="https://vimeo.com/337293658"
-                    />
-                  </div>
-                  <div className="details w-full float-left">
-                    <span className="category inline-block mb-[7px]">
-                      <a href="#">Vimeo</a>
-                    </span>
-                    <h3 className="title">
-                      <a
-                        className="line_effect popup-vimeo"
-                        href="https://vimeo.com/337293658"
-                      >
-                        Firogo Majestic Ltd.
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="list_inner">
-                  <div className="image relative rounded-[4px] overflow-hidden mb-[25px]">
-                    <img
-                      className="min-w-full relative opacity-0"
-                      src="assets/img/thumbs/31-36.jpg"
-                      alt="image"
-                    />
-                    <div
-                      className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                      data-img-url="assets/img/portfolio/3.jpg"
-                    />
-                    <a
-                      className="elisc_tm_full_link soundcloude_link mfp-iframe audio absolute inset-0 z-[5]"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                    />
-                  </div>
-                  <div className="details w-full float-left">
-                    <span className="category inline-block mb-[7px]">
-                      <a href="#">Soundcloud</a>
-                    </span>
-                    <h3 className="title">
-                      <a
-                        className="line_effect soundcloude_link mfp-iframe audio"
-                        href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                      >
-                        Creative Building
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="list_inner">
-                  <div className="image relative rounded-[4px] overflow-hidden mb-[25px]">
-                    <img
-                      className="min-w-full relative opacity-0"
-                      src="assets/img/thumbs/31-36.jpg"
-                      alt="image"
-                    />
-                    <div
-                      className="main absolute inset-0 bg-no-repeat bg-cover bg-center"
-                      data-img-url="assets/img/portfolio/4.jpg"
-                    />
-                    <a
-                      className="elisc_tm_full_link portfolio_popup absolute inset-0 z-[5]"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        modalToggle(true);
-                        setPortfolioModal(true);
-                      }}
-                    />
-                  </div>
-                  <div className="details w-full float-left">
-                    <span className="category inline-block mb-[7px]">
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          modalToggle(true);
-                          setPortfolioModal(true);
-                        }}
-                      >
-                        Modalbox
-                      </a>
-                    </span>
-                    <h3 className="title">
-                      <a
-                        className="line_effect portfolio_popup"
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          modalToggle(true);
-                          setPortfolioModal(true);
-                        }}
-                      >
-                        Beautiful Boat
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
+             
             </Swiper>
             <div className="elisc_tm_button" data-position="center">
-              <a href="#">View all projects</a>
+              <a href="https://github.com/mathula2596?tab=repositories" target='_blank'>View all projects</a>
             </div>
           </div>
         </div>
       </div>
-      {/* PARTNERS */}
-      <Client />
-      {/* /PARTNERS */}
-      {/* TESTIMONIALS */}
-      <Testimonal />
-      {/* /TESTIMONIALS */}
+     
     </SectionContainer>
     );
 }
