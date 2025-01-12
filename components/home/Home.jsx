@@ -19,7 +19,6 @@ export const Home = () => {
                   <h3 className="font-extrabold text-[60px] leading-[70px]">
                     <span className="cd-headline rotate-1">
                       {" "}
-                      {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
                       <span className="blc">Creative </span>
                       <TypeingAnimation />
                     </span>
