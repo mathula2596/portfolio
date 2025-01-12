@@ -175,8 +175,8 @@ body::-webkit-scrollbar {
   width: 11px;
 }
 body {
-  scrollbar-width: thin;
-  scrollbar-color: var(--blue-color) #fff;
+  scrollbar-width: auto;
+  /* scrollbar-color: var(--blue-color) #fff; */
 }
 body:-webkit-scrollbar-track {
   background: #fff;
