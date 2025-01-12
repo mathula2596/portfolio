@@ -15,7 +15,7 @@ export const Sidebar = () => {
     <div className="elisc_tm_sidebar w-[370px] h-[100vh] fixed left-0 top-0 border-solid border-[rgba(85,82,124,.1)] border-r">
       <div className="sidebar_inner w-full float-left h-auto clear-both text-center">
         <div className="author w-full float-left pt-[60px]">
-          <div className="image relative w-[118px] inline-block">
+          <div className="image relative w-[118px] h-[118px] inline-block">
             <img
               className="relative opacity-0 min-w-full"
               src="assets/img/thumbs/1-1.jpg"
