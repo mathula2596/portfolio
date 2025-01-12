@@ -20,7 +20,6 @@ export const About = () => {
                     <span className="job font-semibold text-[20px] text-dark-color">
                       <span className="cd-headline rotate-1">
                         {" "}
-                        {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
                         <span className="blc">Web &amp; Software </span>
                         <TypeingAnimation />
                       </span>

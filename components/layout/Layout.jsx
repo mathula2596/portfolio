@@ -1,10 +1,6 @@
 "use client";
 import React from 'react'
 import { useContext, useEffect } from 'react';
-import VideoPopup from '../popup/VideoPopup';
-import ExperiencePopup from '../popup/ExperiencePopup';
-import ServicePopup from '../popup/ServicePopup';
-import PortfolioPopup from '../popup/PortfolioPopup';
 import BlogPopup from '../popup/BlogPopup';
 import { context } from '@/contexts/context';
 import { MobileMenu } from './MobileMenu';
@@ -32,10 +28,6 @@ const Layout = ({children}) => {
 
     return (
     <>
-        <VideoPopup />
-        {modal && experienceModal && <ExperiencePopup />}
-        {modal && serviceModal && <ServicePopup />}
-        {modal && portfolioModal && <PortfolioPopup />}
         {modal && blogModal && <BlogPopup />}
         <div
         className={animation ? "elisc_tm_all_wrap" : "dodo_tm_one_page_wrapper"}

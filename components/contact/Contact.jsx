@@ -31,9 +31,7 @@ export const Contact = () => {
           });
 
           if (res.ok) {
-            const result = await res.json();  // Parse the JSON body
-            console.log('Parsed Result:', result);  // Log parsed result
-
+            const result = await res.json(); 
             setSuccess(result.message); 
             setMailData({ name: '', email: '', message: '' }); 
 
@@ -41,7 +39,6 @@ export const Contact = () => {
             // Handle errors when response isn't OK
             setSuccess(null)
             const errorData = await res.json();
-            console.log('Error Data:', errorData);
             setError(errorData.message || 'Something went wrong. Please try again.');
           }
         }

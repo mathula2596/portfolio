@@ -4,8 +4,6 @@ import { SectionContainer } from '../SectionContainer';
 import { context } from '@/contexts/context';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { sliderProps } from './sliderProps';
-import { Client } from './Client';
-import { Testimonal } from './Testimonal';
 
 const projects = [
   {

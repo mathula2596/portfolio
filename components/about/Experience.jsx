@@ -70,40 +70,40 @@ export const Experience = () => {
             <h3 className="text-[40px] font-extrabold">Everything about me!</h3>
           </div>
           <div className="list w-full float-left mt-[40px]">
-  <ul className="ml-[-30px] flex flex-wrap">
-    {experiences.map((experience) => (
-      <li
-        className="mb-[40px] pl-[30px] float-left w-1/2 flex"
-        key={experience.id}
-      >
-        <img
-          className="popup_image"
-          src="assets/img/experience/1.jpg"
-          alt="image"
-        />
-        <div className="list_inner w-full bg-white rounded-[4px] px-[70px] py-[45px] relative flex flex-col">
-          <div className="short w-full flex justify-between mb-[16px]">
-            <div className="job">
-              <span className="text-yellow-color font-medium inline-block mb-[4px]">
-                -{experience.date}
-              </span>
-              <h3 className="text-[20px]">{experience.designation}</h3>
-            </div>
-            <div className="place">
-              <span className="font-medium font-inter">
-                -{experience.company}
-              </span>
-            </div>
+            <ul className="ml-[-30px] flex flex-wrap">
+              {experiences.map((experience) => (
+                <li
+                  className="mb-[40px] pl-[30px] float-left w-1/2 flex"
+                  key={experience.id}
+                >
+                  <img
+                    className="popup_image"
+                    src="assets/img/experience/1.jpg"
+                    alt="image"
+                  />
+                  <div className="list_inner w-full bg-white rounded-[4px] px-[70px] py-[45px] relative flex flex-col">
+                    <div className="short w-full flex justify-between mb-[16px]">
+                      <div className="job">
+                        <span className="text-yellow-color font-medium inline-block mb-[4px]">
+                          -{experience.date}
+                        </span>
+                        <h3 className="text-[20px]">{experience.designation}</h3>
+                      </div>
+                      <div className="place">
+                        <span className="font-medium font-inter">
+                          -{experience.company}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="text w-full">
+                      <p className="opacity-[0.7]">{experience.description}</p>
+                    </div>
+                  
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="text w-full">
-            <p className="opacity-[0.7]">{experience.description}</p>
-          </div>
-        
-        </div>
-      </li>
-    ))}
-  </ul>
-</div>
 
         </div>
       </div>
