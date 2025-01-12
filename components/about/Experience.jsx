@@ -5,7 +5,6 @@ import { context } from '@/contexts/context'
 const experiences = [
     {
       id: 1,
-      image: "assets/img/experience/1.jpg",
       date: "Nov 2023 - Present",
       company: "Mieszko Food City Limited",
       designation: "Full Stack Developer",
@@ -13,7 +12,6 @@ const experiences = [
     },
     {
       id: 2,
-      image: "assets/img/experience/2.jpg",
       date: "Sep 2022 - Sep 2023",
       company: "BRUSH Electrical Machines Ltd",
       designation: "Engineer – Student Intern ",
@@ -22,7 +20,6 @@ const experiences = [
     },
     {
       id: 3,
-      image: "assets/img/experience/3.jpg",
       date: "March 2021 - Aug 2021",
       company: "Speed IT Net",
       designation: "Junior Software Developer",
@@ -31,7 +28,6 @@ const experiences = [
     },
     {
       id: 4,
-      image: "assets/img/experience/4.jpg",
       date: "Oct 2019 - Feb 2021",
       company: "Utrop",
       designation: "Junior Developer",
@@ -40,7 +36,6 @@ const experiences = [
     },
     {
       id: 5,
-      image: "assets/img/experience/3.jpg",
       date: "Jun 2019 - Sep 2019",
       company: "Infosystm",
       designation: "Software Developer - Intern ",
@@ -49,7 +44,6 @@ const experiences = [
     },
     {
       id: 6,
-      image: "assets/img/experience/4.jpg",
       date: "Jan 2017 - Present",
       company: "Freelancer",
       designation: "Web Developer",
@@ -76,11 +70,7 @@ export const Experience = () => {
                   className="mb-[40px] pl-[30px] float-left w-1/2 flex"
                   key={experience.id}
                 >
-                  <img
-                    className="popup_image"
-                    src="assets/img/experience/1.jpg"
-                    alt="image"
-                  />
+                  
                   <div className="list_inner w-full bg-white rounded-[4px] px-[70px] py-[45px] relative flex flex-col">
                     <div className="short w-full flex justify-between mb-[16px]">
                       <div className="job">
