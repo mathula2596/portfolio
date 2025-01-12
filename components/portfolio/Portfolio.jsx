@@ -12,35 +12,35 @@ const projects = [
     id:1,
     title: "Library Management System",
     category: "Desktop Application",
-    image: "assets/img/portfolio/1.jpg",
+    image: "assets/img/portfolio/library.jpeg",
     link: "https://github.com/mathula2596/LibraryManagementSystem"
   },
   {
     id:2,
     title: "Defect Management System",
     category: "Web Application",
-    image: "assets/img/portfolio/1.jpg",
+    image: "assets/img/portfolio/defect.jpeg",
     link: "https://github.com/mathula2596/DefectManagementSystem/tree/master/FinalDefect"
   },
   {
     id:3,
     title: "I For You",
     category: "Mobile Application",
-    image: "assets/img/portfolio/1.jpg",
+    image: "assets/img/portfolio/android.png",
     link: "https://github.com/mathula2596/IForYou"
   },
   {
     id:4,
     title: "Fitting In",
     category: "Unity Game Application",
-    image: "assets/img/portfolio/1.jpg",
+    image: "assets/img/portfolio/game.jpeg",
     link: "https://github.com/mathula2596/FittingIn"
   },
   {
     id:5,
     title: "News Portal",
     category: "Web Application",
-    image: "assets/img/portfolio/1.jpg",
+    image: "assets/img/portfolio/news.jpeg",
     link: "https://bitbucket.org/bitproject2019/techfascino/src/master/"
   },
 

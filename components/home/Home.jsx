@@ -80,7 +80,7 @@ export const Home = () => {
                 </div>
               </div>
               <div className="right w-1/2 pl-[50px]">
-                <img src="assets/img/about/2.png" alt="image" />
+                <img src="assets/img/profile/new-slider.png" alt="image" />
               </div>
             </div>
           </div>

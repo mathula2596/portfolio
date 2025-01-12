@@ -7,7 +7,7 @@ const blogsData = [
       id: 1,
       title: "The Journey of a Full-Stack Developer",
       date: "January 10, 2025",
-      img: "assets/img/news/1.jpg",
+      img: "assets/img/blog/blog1.jpeg",
       content: "<h3>Introduction</h3>\
                   <p>Becoming a full-stack developer involves understanding both the frontend and backend of a web application. As a full-stack developer, I am responsible for everything from building the user interface to ensuring smooth server-side operations. In this blog post, I’ll take you through the tools, technologies, and best practices that help me develop powerful web applications efficiently.</p>\
                   <h3>Frontend Development</h3>\
@@ -33,7 +33,7 @@ const blogsData = [
       id: 2,
       title: "Building Efficient and Scalable Databases: Best Practices for Developers",
       date: "January 01, 2025",
-      img: "assets/img/news/2.jpg",
+      img: "assets/img/blog/blog2.jpeg",
       content: "<h3>Introduction</h3>\
               <p>Databases are the backbone of most web applications. A well-structured database can make the difference between a slow, cumbersome app and a fast, reliable one. In this blog post, I will share my experience in designing efficient and scalable databases using technologies like MySQL, PostgreSQL, and MongoDB.</p>\
               <h3>Choosing the Right Database</h3>\
@@ -54,7 +54,7 @@ const blogsData = [
       id: 3,
       title: "A Beginner’s Guide to Cloud Computing and Server Hosting",
       date: "January 12, 2025",
-      img: "assets/img/news/3.jpg",
+      img: "assets/img/blog/blog3.jpeg",
       content: "<h3>Introduction</h3>\
               <p>Cloud computing has revolutionized the way we develop and deploy applications. Gone are the days when we needed to maintain physical servers. With the cloud, we can easily host and scale applications. In this blog post, I’ll explain what cloud computing is, how to get started with server hosting, and the benefits of using cloud services like AWS and VPS.</p>\
               <h3>What is Cloud Computing?</h3>\
@@ -76,7 +76,7 @@ const blogsData = [
       id: 4,
       title: "My Approach to Building and Launching a Web Application",
       date: "January 15, 2025",
-      img: "assets/img/news/4.jpg",
+      img: "assets/img/blog/blog4.jpeg",
       content: "<h3>Introduction</h3>\
                   <p>Building a web application is a multi-step process that requires careful planning, development, and deployment. In this post, I will walk you through my approach for building and launching a web application, from ideation to deployment and maintenance.</p>\
                   <h3>Step 1: Ideation and Requirements Gathering</h3>\
@@ -93,8 +93,8 @@ const blogsData = [
     {
       id: 5,
       title: "Understanding API Development",
-      date: "January 18, 2025",
-      img: "assets/img/news/5.jpg",
+      date: "January 06, 2025",
+      img: "assets/img/blog/blog5.jpeg",
       content: "<h3>Introduction</h3>\
                   <p>APIs (Application Programming Interfaces) are the backbone of modern web applications. They allow different services to communicate with each other, exchanging data and triggering actions. In this blog post, I will walk you through the process of developing APIs, along with the best practices and tools that help ensure they are secure, scalable, and easy to use.</p>\
                   <h3>What is an API?</h3>\
