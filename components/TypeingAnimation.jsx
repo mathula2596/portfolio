@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 
 export const TypeingAnimation = () => {
-  const skills = ["Developer", "Designer", "Player"];
+  const skills = ["Developer", "Designer", "Freelancer"];
   const [text, setText] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {

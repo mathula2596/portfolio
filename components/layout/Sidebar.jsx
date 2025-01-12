@@ -6,9 +6,9 @@ export const Sidebar = () => {
   const { navChange, nav, menus } = useContext(context);
 
   const socialLinks = [
-    { id: 1, name: "facebook", link: "#", icon: "icon-facebook-1" },
-    { id: 2, name: "twitter", link: "#", icon: "icon-twitter-1" },
-    { id: 3, name: "linkedin", link: "#", icon: "icon-linkedin-1" },
+    { id: 1, name: "linkedin", link: "https://www.linkedin.com/in/mathula/", icon: "icon-linkedin-1" },
+    { id: 2, name: "github", link: "https://github.com/mathula2596", icon: "icon-github-1" },
+    { id: 3, name: "facebook", link: "https://www.facebook.com/mathula25/", icon: "icon-facebook-1" },
   ];
 
   return (
@@ -23,7 +23,7 @@ export const Sidebar = () => {
             />
             <div
               className="main absolute inset-0 bg-no-repeat bg-cover bg-center rounded-full"
-              data-img-url="assets/img/profile/mathula.jpg"
+              data-img-url="assets/img/profile/mathula.jpeg"
             />
           </div>
           <div className="name w-full float-left mt-[-19px]">
@@ -46,6 +46,10 @@ export const Sidebar = () => {
                 </a>
               </li>
             ))}
+            <div className='elisc_tm_button'>
+
+            <a href='assets/files/MathulaShanmugaratnamCV.docx' download={'MathulaShanmugaratnamCV.docx'} className="">Download CV</a>
+            </div>
           </ul>
         </div>
         <div className="copyright absolute bottom-[50px]">
@@ -67,7 +71,7 @@ export const Sidebar = () => {
           </div>
           <div className="text py-0 px-[50px]">
             <p>
-              Copyright © {new Date().getFullYear()} Robert Elisc. All rights
+              Copyright © {new Date().getFullYear()} Mathula. All rights
               reserved.
             </p>
           </div>

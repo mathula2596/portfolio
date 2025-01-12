@@ -10,36 +10,46 @@ export const Contact = () => {
       });
       const { name, email, message } = mailData;
       const [error, setError] = useState(null);
+      const [success, setSuccess] = useState(null);
       const onChange = (e) =>
         setMailData({ ...mailData, [e.target.name]: e.target.value });
-      const onSubmit = (e) => {
+      
+      const onSubmit = async (e) => {
         e.preventDefault();
         if (name.length === 0 || email.length === 0 || message.length === 0) {
           setError(true);
+          setSuccess(false);
           clearError();
         } else {
-          emailjs
-            .send(
-              "service_seruhwu", // service id
-              "template_21aw58z", // template id
-              mailData,
-              "Q3pccdLZhU-mZT7tQ" // public api
-            )
-            .then(
-              (response) => {
-                setError(false);
-                clearError();
-                setMailData({ name: "", email: "", message: "" });
-              },
-              (err) => {
-                console.log(err.text);
-              }
-            );
+
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
+          });
+
+          if (res.ok) {
+            const result = await res.json();  // Parse the JSON body
+            console.log('Parsed Result:', result);  // Log parsed result
+
+            setSuccess(result.message); 
+            setMailData({ name: '', email: '', message: '' }); 
+
+          } else {
+            // Handle errors when response isn't OK
+            setSuccess(null)
+            const errorData = await res.json();
+            console.log('Error Data:', errorData);
+            setError(errorData.message || 'Something went wrong. Please try again.');
+          }
         }
       };
       const clearError = () => {
         setTimeout(() => {
           setError(null);
+          setSuccess(null);
         }, 2000);
       };
       return (
@@ -55,28 +65,29 @@ export const Contact = () => {
                     <h3 className="text-[40px] font-extrabold">Get in touch</h3>
                   </div>
                   <div className="text w-full float-left mt-[20px] mb-[40px]">
-                    <p>
-                      I'm currently avaliable to take on new projects, so feel free
-                      to send me a message about anything that you want to run past
-                      me. You can contact anytime at 24/7
-                    </p>
+                  <p>
+                    I’m currently looking for new opportunities and exciting projects. I am open to relocation and ready to work anywhere to contribute to your next venture. 
+                    If you have something in mind or need assistance, feel free to reach out. I'm available anytime to discuss how I can be a valuable asset to your team.
+                  </p>
+
+
                   </div>
                   <div className="info w-full float-left">
                     <ul>
                       <li className="mb-[8px] w-full float-left">
                         <a
                           className="text-dark-color font-semibold font-inter inline-block relative"
-                          href="tel:+77 022 444 05 05"
+                          href="tel:+447902416367"
                         >
-                          +77 022 444 05 05
+                          +44 7902416367
                         </a>
                       </li>
                       <li className="mb-[8px] w-full float-left">
                         <a
                           className="text-dark-color font-semibold font-inter inline-block relative"
-                          href="tel:+77 022 444 05 05"
+                          href="mailto:mathula2504@gmail.com"
                         >
-                          support@elisc.com
+                          mathula2504@gmail.com
                         </a>
                       </li>
                       <li className="w-full float-left">
@@ -84,7 +95,7 @@ export const Contact = () => {
                           className="href_location text-dark-color font-semibold font-inter inline-block relative"
                           href="#"
                         >
-                          Ave Street Avenue, New York
+                          Twyford Road, Harrow, UK
                         </a>
                       </li>
                     </ul>
@@ -92,6 +103,7 @@ export const Contact = () => {
                 </div>
                 <div className="right w-1/2 pl-[50px]">
                   <div className="fields w-full float-left h-auto clear-both">
+                    
                     <form
                       onSubmit={(e) => onSubmit(e)}
                       className="contact_form"
@@ -109,7 +121,18 @@ export const Contact = () => {
                           {error
                             ? "Please Fill Required Fields"
                             : "Your message has been received, We will contact you soon."}
+                            
                         </span>
+                       
+                      </div>
+                      <div
+                        className={success ? "returnmessage" : "empty_notice"}
+                        style={{ display: success == null ? "none" : "block" }}
+                      >
+                        <span className='text-green-500 font-bold'>
+                          {success}
+                        </span>
+                        
                       </div>
                       <div className="first w-full float-left">
                         <ul>
@@ -149,7 +172,7 @@ export const Contact = () => {
                       <div className="elisc_tm_button">
                         <input type="submit" value="Submit now" />
                       </div>
-                      {/* If you want change mail address to yours, just open "modal" folder >> contact.php and go to line 4 and change detail to yours.  */}
+                      
                     </form>
                   </div>
                 </div>
@@ -161,32 +184,16 @@ export const Contact = () => {
                       width="100%"
                       height={375}
                       id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2479.624441231524!2d-0.36505622357601786!3d51.57511800575429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876133923225449%3A0x52d1768a6bc1f0e2!2sTwyford%20Rd%2C%20Harrow!5e0!3m2!1sen!2suk!4v1736696397122!5m2!1sen!2suk"
                       frameBorder={0}
                       scrolling="no"
                       marginHeight={0}
                       marginWidth={0}
                     />
-                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon" />
-                    <br />
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          ".mapouter{position:relative;text-align:right;height:375px;width:100%;}",
-                      }}
-                    />
-                    <a href="https://www.embedgooglemap.net">
-                      how to add google map
-                    </a>
-                    <style
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          ".gmap_canvas {overflow:hidden;background:none!important;height:375px;width:100%;}",
-                      }}
-                    />
+                    
                   </div>
                 </div>
-                {/* Get your API here https://www.embedgooglemap.net */}
+              
               </div>
             </div>
           </div>

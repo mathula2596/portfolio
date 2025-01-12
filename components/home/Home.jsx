@@ -30,15 +30,15 @@ export const Home = () => {
                 </div>
                 <div className="subtitle wfll max-w-[80%] float-left mb-[40px]">
                   <p>
-                    I'm a UK based web developer &amp; full stack developer
+                    I'm a UK based web developer &amp; software developer
                     with <span className="text-blue-color">4+ years</span> of
                     experience
                   </p>
                 </div>
                 <div className="buttons w-full float-left flex items-center mb-[150px]">
                   <div className="elisc_tm_button transition_link">
-                    <a href="#portfolio" onClick={() => navChange("portfolio")}>
-                      Got a project?
+                    <a href="/assets/files/MathulaShanmugaratnamCV.docx" download={'MathulaShanmugaratnamCV.docx'}>
+                      Download CV
                     </a>
                   </div>
                   <div
