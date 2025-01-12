@@ -14,7 +14,7 @@ export const Home = () => {
               <div className="left w-1/2">
                 <div className="title w-full float-left mb-[21px]">
                   <h3 className="font-extrabold text-[60px] leading-[70px]">
-                    Hi, I'm <span className="text-blue-color">Elisc!</span>
+                    Hi, I'm <span className="text-blue-color">Mathula!</span>
                   </h3>
                   <h3 className="font-extrabold text-[60px] leading-[70px]">
                     <span className="cd-headline rotate-1">
@@ -25,13 +25,13 @@ export const Home = () => {
                     </span>
                   </h3>
                   <h3 className="font-extrabold text-[60px] leading-[70px]">
-                    Based in Florida
+                    Based in UK
                   </h3>
                 </div>
                 <div className="subtitle wfll max-w-[80%] float-left mb-[40px]">
                   <p>
-                    I'm a Florida based web designer &amp; front‑end developer
-                    with <span className="text-blue-color">10+ years</span> of
+                    I'm a UK based web developer &amp; full stack developer
+                    with <span className="text-blue-color">4+ years</span> of
                     experience
                   </p>
                 </div>
@@ -55,17 +55,17 @@ export const Home = () => {
                     <li className="pl-[15px]">
                       <a
                         className="text-[#130F49] font-semibold text-[18px]"
-                        href="tel:+77 022 444 05 05"
+                        href="tel:+447902416367"
                       >
-                        +77 022 444 05 05
+                        +44 7902416361
                       </a>
                     </li>
                     <li className="pl-[15px]">
                       <a
                         className="text-[#130F49] font-semibold text-[18px]"
-                        href="mailto:support@elisc.com"
+                        href="mailto:mathula2504@gmail.com"
                       >
-                        support@elisc.com
+                        mathula2504@gmail.com
                       </a>
                     </li>
                     <li className="pl-[15px]">
@@ -73,7 +73,7 @@ export const Home = () => {
                         className="href_location text-[#130F49] font-semibold text-[18px]"
                         href="#"
                       >
-                        Ave Street Avenue, New York
+                        Twyford Road, Harrow, UK
                       </a>
                     </li>
                   </ul>

@@ -23,13 +23,13 @@ export const Sidebar = () => {
             />
             <div
               className="main absolute inset-0 bg-no-repeat bg-cover bg-center rounded-full"
-              data-img-url="assets/img/about/1.jpg"
+              data-img-url="assets/img/profile/mathula.jpg"
             />
           </div>
           <div className="name w-full float-left mt-[-19px]">
             <h3>
               <span>
-                Robert Elisc<span className="back">Robert Elisc</span>
+                Mathula Shanmugaratnam<span className="back">Mathula Shanmugaratnam</span>
               </span>
             </h3>
           </div>
