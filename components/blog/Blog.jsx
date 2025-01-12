@@ -128,7 +128,7 @@ export const Blog = () => {
     const { modalToggle, setBlogModal, navChange } = useContext(context);
     return (
       <SectionContainer name="blogs">
-        <div className="elisc_tm_news fn_w_sminiboxes w-full float-left py-[120px] px-0">
+        <div className="elisc_tm_news fn_w_sminiboxes w-full float-left py-[100px] px-0">
           <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
             <div className="wrapper w-full flex justify-between">
               <div className="left fn_w_sminibox w-1/3 pr-[50px]">

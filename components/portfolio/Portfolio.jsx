@@ -50,7 +50,7 @@ export const Portfolio = () => {
     const { navChange } = useContext(context);
     return (
     <SectionContainer name="portfolio">
-      <div className="elisc_tm_portfolio w-full float-left pt-[120px]">
+      <div className="elisc_tm_portfolio w-full float-left pt-[110px]">
         <div className="tm_content w-full max-w-[1250px] h-auto clear-both my-0 mx-auto py-0 px-[20px]">
           <div className="elisc_tm_portfolio_title w-full float-left flex items-end justify-between">
             <div className="elisc_tm_title w-auto float-left">

@@ -772,10 +772,10 @@ body::-webkit-scrollbar-thumb {
   visibility: visible;
 }
 .dodo_tm_one_page_wrapper .elisc_tm_portfolio {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .dodo_tm_one_page_wrapper .elisc_tm_news {
-  padding-top: 120px;
+  padding-top: 100px;
 }
 .dodo_tm_one_page_wrapper .elisc_tm_sticky_section {
   top: 0px;
@@ -1008,4 +1008,13 @@ body::-webkit-scrollbar-thumb {
 .elisc_tm_intro_fixed_price .anim:nth-child(3) {
   -webkit-animation: myAnim 2s infinite 0.6s;
   animation: myAnim 2s infinite 0.6s;
+}
+
+.menu-download:hover {
+  /* background-color: #130f49; */
+  color: var(--blue-color) !important;
+}
+.menu-download {
+  /* background-color: #ffffff; */
+  color: #fff !important;
 }

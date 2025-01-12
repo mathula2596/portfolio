@@ -46,10 +46,12 @@ export const Sidebar = () => {
                 </a>
               </li>
             ))}
-            <div className='elisc_tm_button'>
+            <li>
+            <div className='elisc_tm_button '>
 
-            <a href='assets/files/MathulaShanmugaratnamCV.docx' download={'MathulaShanmugaratnamCV.docx'} className="">Download CV</a>
+            <a href='assets/files/MathulaShanmugaratnamCV.docx' download={'MathulaShanmugaratnamCV.docx'} className="text-white menu-download" >Download CV</a>
             </div>
+            </li>
           </ul>
         </div>
         <div className="copyright absolute bottom-[50px]">
