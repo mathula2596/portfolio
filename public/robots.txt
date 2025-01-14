@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mathula.vercel.app
+
+# Sitemaps
+Sitemap: https://mathula.vercel.app/sitemap.xml
