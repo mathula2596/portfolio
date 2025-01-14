@@ -29,7 +29,7 @@ module.exports = {
                 priority: 1.0,
             },
             {
-                loc: '/blogs',
+                loc: '/#blogs',
                 changefreq: 'daily',
                 priority: 1.0,
             },
